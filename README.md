@@ -1,4 +1,4 @@
-# Always position new tabs to the immediate right of the current tab in Safari on macOS
+# Always position new tabs to the immediate right of the current tab in Safari on macOS Tahoe 26
 
 <br>
 

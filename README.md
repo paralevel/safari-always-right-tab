@@ -6,7 +6,7 @@
 
 <br>
 
-Open Terminal, run the following commands and then restart Safari:
+Open Terminal and run the following commands – then restart Safari
 ~~~flf
 defaults write $HOME/Library/Containers/com.apple.Safari/Data/Library/Preferences/com.apple.Safari.plist WBSNewTabPositionPreferenceKey -int 0
 ~~~

@@ -8,22 +8,20 @@
 
 Open Terminal, run the following commands and then restart Safari:
 ~~~flf
-defaults write com.apple.safari WBSNewTabPositionPreferenceKey -int 0
+defaults write $HOME/Library/Containers/com.apple.Safari/Data/Library/Preferences/com.apple.Safari.plist WBSNewTabPositionPreferenceKey -int 0
 ~~~
 ~~~flf
-defaults write com.apple.safari WBSNewTabPositionAppliesToSpawnedTabsPreferenceKey -int 1
+defaults write $HOME/Library/Containers/com.apple.Safari/Data/Library/Preferences/com.apple.Safari.plist WBSNewTabPositionAppliesToSpawnedTabsPreferenceKey -int 1
 ~~~
-
-If you get a `Could not write domain` error, this usually means you haven't yet granted Terminal _Full Disk Access_ on your macOS installation – to do that go to Security & Privacy › Full Disk Access in System Settings and check “Terminal.app”
 
 <br>
 
-To revert:
+_To revert:_
 ~~~flf
-defaults delete com.apple.safari WBSNewTabPositionPreferenceKey
+defaults delete $HOME/Library/Containers/com.apple.Safari/Data/Library/Preferences/com.apple.Safari.plist WBSNewTabPositionPreferenceKey
 ~~~
 ~~~flf
-defaults delete com.apple.safari WBSNewTabPositionAppliesToSpawnedTabsPreferenceKey
+defaults delete $HOME/Library/Containers/com.apple.Safari/Data/Library/Preferences/com.apple.Safari.plist WBSNewTabPositionAppliesToSpawnedTabsPreferenceKey
 ~~~
 
 <br>

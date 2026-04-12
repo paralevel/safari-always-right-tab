@@ -16,15 +16,20 @@ defaults write $HOME/Library/Containers/com.apple.Safari/Data/Library/Preference
 
 <br>
 
-_To revert:_
-~~~flf
+<sup>
+<i>
+
+To revert:
+~~~
 defaults delete $HOME/Library/Containers/com.apple.Safari/Data/Library/Preferences/com.apple.Safari.plist WBSNewTabPositionPreferenceKey
 ~~~
-~~~flf
+~~~
 defaults delete $HOME/Library/Containers/com.apple.Safari/Data/Library/Preferences/com.apple.Safari.plist WBSNewTabPositionAppliesToSpawnedTabsPreferenceKey
 ~~~
 
-<br>
+</i>
+</sup>
+
 <br>
 
 ***For blank tabs***

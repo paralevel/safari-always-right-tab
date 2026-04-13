@@ -44,27 +44,25 @@ defaults write -app safari WBSNewTabPositionAppliesToSpawnedTabsPreferenceKey -i
 <br /><br />
     <ins><i>Once opened, in the leftmost panel</i></ins>
 <br /><br />
-  </li><li>In the left panel, click the barely visible <i>Add</i> <i>Group</i> button
+  </li><li>In the left panel, click the <i>Add</i> <i>Group</i> button
 <br /><br />
-  </li><li>In the window that opens, set the name to <i>Safari</i>, then click the barely visible <i>Applications</i> button, select Safari, click <i>Save</i>
+  </li><li>In the window that opens, set the name to <i>Safari</i>, then click the <i>Applications</i> button, select Safari, click <i>Save</i>
 <br /><br />
   </li><li>Make sure the <i>Safari</i> group is selected
 <br /><br />
     <ins><i>In the middle panel</i></ins>
 <br /><br />
-</li><li>Click the barely visible <i>Add</i> <i>Workflow</i> button
+</li><li>Click the <i>Add</i> <i>Workflow</i> button
 <br /><br />
   <ins><i>In the rightmost panel</i></ins>
 <br /><br />
   </li><li>Set the workflow name to e.g. <i>New</i> <i>tab</i>
 <br /><br />
-  </li><li>Under <i>Add</i> <i>Trigger</i>, click the barely visible <i>Keyboard</i> <i>Shortcut</i> button
+  </li><li>Under <i>Add</i> <i>Trigger</i>, click the <i>Keyboard</i> <i>Shortcut</i> button
 <br /><br />
-  </li><li>For the keyboard shortcut, press command + T (recommended)
+  </li><li>When the red <i>Recording…</i> widget appears, press command + T (recommended)
 <br /><br />
   </li><li>Click the <i>New</i> <i>Command</i> button and then in the popup menu, select <i>Scripting</i> and then <i>New</i> <i>AppleScript</i>
-<br /><br />
-  </li><li>Set name of the script to e.g. <i>New</i> <i>tab</i> <i>script</i>
 <br /><br />
   </li><li>Click the <i>Script goes here</i> field and paste the following
   
@@ -83,7 +81,12 @@ tell application "Safari"
 	end tell
 end tell
 ~~~
-  
+   </li><li>Open System Settings
+<br /><br />
+  </li><li>Go to Privacy & Security › Automation › Keyboard Cowboy.app and make sure Safari.app is enabled
+<br /><br />
+  </li><li>Go to Privacy & Security › Accessibility and make sure Keyboard Cowboy.app is enabled
+<br /><br />
   </li><li>Open Safari and check if the keyboard shortcut works
 <br /><br />
   </li><li>Make Keyboard Cowboy start automatically when you log in – click the menu bar icon and select <i>Open</i> <i>at</i> <i>Login</i>

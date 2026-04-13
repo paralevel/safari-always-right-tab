@@ -35,47 +35,25 @@ defaults write -app safari WBSNewTabPositionAppliesToSpawnedTabsPreferenceKey -i
 
 ***For blank tabs***
 
-<br>
-
-<ol>
-  <li>Download Keyboard Cowboy: https://zenangst.github.io/app/keyboardcowboy/index.html
-<br /><br />
-  </li><li>Install and launch it
-<br /><br />
-    <ins><i>In the leftmost panel</i></ins>
-<br /><br />
-	</li><li>When the “Choose your configuration" window appears, click “Empty" and “Confirm”
-<br /><br />
-		</li><li>Click the ”Request Permission" button in the next window
-<br /><br />
-	</li><li>In the ”Accessibility Access" dialog that appears, click “Open System Settings”
-<br /><br />
-	</li><li>In the System Settings window, check Keyboard Cowboy.app
-<br /><br />
-		</li><li>Click the Keyboard Cowboy icon in the Menu Bar and select “Open Keyboard Cowboy”
-<br /><br />
-  </li><li>In the left panel, click the very hard to see “Add Group” button
-<br /><br />
-  </li><li>In the window that opens, set the name to “Safari”, then under “Allowed Applications". click “Applications”, select Safari and click “Save”
-<br /><br />
-  </li><li>Make sure the newly created “Safari” group is selected
-<br /><br />
-    <ins><i>In the middle panel</i></ins>
-<br /><br />
-</li><li>Click the “Add Workflow”
-<br /><br />
-  <ins><i>In the rightmost panel</i></ins>
-<br /><br />
-  </li><li>Set the workflow name to e.g. “New tab”
-<br /><br />
-  </li><li>Under “Add Trigger”, click “Keyboard Shortcut”
-<br /><br />
-  </li><li>When the red “Recording…” widget appears, press Command + T (recommended)
-<br /><br />
-  </li><li>Click “New Command” and then in the popup menu, select “Scripting” and then “New Shellscript” (have to use shell script since the current version of Keyboard Cowboy fails to ask for Automation permission when using AppleScript)
-<br /><br />
-  </li><li>Click the “Script goes here” field and paste the following
-  
+1. Download Keyboard Cowboy: https://zenangst.github.io/app/keyboardcowboy/index.html
+2. Install and launch it<br>
+- <i>In the leftmost panel</i>
+3. On first launch When the “Choose your configuration” window appears, click “Empty" followed by “Confirm”
+4. Click the ”Request Permission" button in the next window
+5. In the ”Accessibility Access" dialog that appears, click “Open System Settings”
+6. In the System Settings window, check Keyboard Cowboy.app
+7. Click the Keyboard Cowboy icon in the Menu Bar and select “Open Keyboard Cowboy”
+8. In the left panel, click the very hard to see “Add Group” button
+9. In the window that opens, set the name to “Safari”, then under “Allowed Applications". click “Applications”, select Safari and click “Save”
+10. Make sure the newly created “Safari” group is selected
+- <i>In the middle panel</i>
+11. Click the “Add Workflow”
+- <i>In the rightmost panel</i>
+12. Set the workflow name to e.g. “New tab”
+13. Under “Add Trigger”, click “Keyboard Shortcut”
+14. When the red “Recording…” widget appears, press Command + T (recommended)
+15. Click “New Command” and then in the popup menu, select “Scripting” and then “New Shellscript” (have to use shell script since the current version of Keyboard Cowboy fails to ask for Automation permission when using AppleScript)
+16. Click the “Script goes here” field and paste the following
 ~~~applescript
 #!/usr/bin/osascript
 tell application "Safari"
@@ -92,17 +70,14 @@ tell application "Safari"
 	end tell
 end tell
 ~~~
-
-   </li><li>Press Command + W or manually close the Keyboard Cowboy window, which also removes the icon from the Dock – don't press Command + Q or the Menu Bar process quits too
-<br /><br />
-  </li><li>Open Safari and check if the keyboard shortcut works
-<br /><br />
-	   </li><li>The first time the keyboard shortcut triggers the assigned script, click "Allow" in the dialog that opens asking you to allow “Keyboard Cowboy.app” to control “Safari.app”
-		   <br /><br />
-  </li><li>Make Keyboard Cowboy start automatically when you log in – click the menu bar icon and select “Open at Login</i>
-<br /><br />
-  <ins><i>Optionally also</i></ins>
-<br /><br />
-  </li><li>In Safari, right-click the toolbar, choose <i>Customize</i> <i>Toolbar</i> and drag the +/New Tab button out of the toolbar, since it opens the tab at the end of the entire tab bar
-  </li></ol>
-<br/>
+17. Press Command + W or manually close the Keyboard Cowboy window, which also removes the icon from the Dock – don't press Command + Q or the Menu Bar process quits too
+18. Open Safari and check if the keyboard shortcut works
+19. The first time the keyboard shortcut triggers the assigned script, click "Allow" in the dialog that opens asking you to allow “Keyboard Cowboy.app” to control “Safari.app”
+20. Make Keyboard Cowboy start automatically when you log in – click the menu bar icon and select “Open at Login</i>
+- <i>Optionally also</i>
+21. In Safari, right-click the toolbar, choose <i>Customize</i> <i>Toolbar</i> and drag the +/New Tab button out of the toolbar, since it opens the tab at the end of the entire tab bar
+    
+<br>
+<br>
+<br>
+<br>

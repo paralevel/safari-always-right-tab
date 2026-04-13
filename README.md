@@ -46,11 +46,11 @@ defaults write -app safari WBSNewTabPositionAppliesToSpawnedTabsPreferenceKey -i
 <br /><br />
 	</li><li>When the “Choose your configuration" window appears, click “Empty" and “Confirm”
 <br /><br />
-			</li><li>Click the ”Request Permission" button in the next window
+		</li><li>Click the ”Request Permission" button in the next window
 <br /><br />
-							</li><li>In the ”Accessibility Access" dialog that appears, click “Open System Settings”
+	</li><li>In the ”Accessibility Access" dialog that appears, click “Open System Settings”
 <br /><br />
-															</li><li>In the System Settings window, check Keyboard Cowboy.app
+	</li><li>In the System Settings window, check Keyboard Cowboy.app
 <br /><br />
 		</li><li>Click the Keyboard Cowboy icon in the Menu Bar and select “Open Keyboard Cowboy”
 <br /><br />
@@ -72,7 +72,7 @@ defaults write -app safari WBSNewTabPositionAppliesToSpawnedTabsPreferenceKey -i
 <br /><br />
   </li><li>When the red “Recording…” widget appears, press Command + T (recommended)
 <br /><br />
-  </li><li>Click “New Command” and then in the popup menu, select “Scripting” and then “New Shellscript” (cannot use AppleScript directly since Keyboard Cowboy's AppleScript implementation isn't working properly)
+  </li><li>Click “New Command” and then in the popup menu, select “Scripting” and then “New Shellscript” (have to use shell script since the current version of Keyboard Cowboy fails to ask for Automation permission when using AppleScript)
 <br /><br />
   </li><li>Click the “Script goes here” field and paste the following
   

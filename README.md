@@ -16,21 +16,29 @@ defaults write -app safari WBSNewTabPositionPreferenceKey -int 0
 defaults write -app safari WBSNewTabPositionAppliesToSpawnedTabsPreferenceKey -int 1
 ~~~
 
-<sub>_Workaround if you get a `Could not write domain` error (a bug that happens on new macOS installations or on newly created user accounts, when `com.apple.Safari.plist` hasn't yet been initialized for the `defaults` command):_</sub>
-<br>
-<sub>_1. `open $HOME/Library/Containers/com.apple.Safari/Data/Library/Preferences/`_</sub>
-<br>
-<sub>_2. `defaults read `\<drag and drop `com.apple.Safari.plist` from Finder here\>_</sub>
-<br>
-<sub>_3. Retry the previous commands_</sub>
+<sub>Run the following commands if you get a `Could not write domain` error (a bug that happens on new macOS installations or on newly created user accounts, when the `defaults` command hasn't yet become aware of the `com.apple.Safari` plist:</sub>
+
+<sub>`open $HOME/Library/Containers/com.apple.Safari/Data/Library/Preferences/`&emsp;&emsp;_opens that folder in Finder_</sub>
+
+<sub>`defaults read`&emsp;&emsp;_drag and drop 'com.apple.Safari.plist' from Finder after 'read' - for some reason won't work if you just write the path manually_</sub>
+
+<sub>Then retry the commands from the previous step</sub>
 
 <br>
 
-<sub>_To revert:_</sub>
-<br>
-<sub>_`defaults delete -app safari WBSNewTabPositionPreferenceKey`_</sub>
-<br>
-<sub>_`defaults delete -app safari WBSNewTabPositionAppliesToSpawnedTabsPreferenceKey`_</sub>
+_To revert to default tab opening behavior:_
+
+<sub>
+
+~~~
+defaults delete -app safari WBSNewTabPositionPreferenceKey
+~~~
+
+~~~
+defaults delete -app safari WBSNewTabPositionAppliesToSpawnedTabsPreferenceKey
+~~~
+
+</sub>
 
 <br>
 <br>

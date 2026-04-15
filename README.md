@@ -1,4 +1,4 @@
-# Open every new Safari tab next to the current
+# Open new Safari tabs next to the current
 
 Position new tabs to the immediate right of the current tab in Safari on macOS Tahoe 26
 
@@ -16,13 +16,15 @@ defaults write -app safari WBSNewTabPositionPreferenceKey -int 0
 defaults write -app safari WBSNewTabPositionAppliesToSpawnedTabsPreferenceKey -int 1
 ~~~
 
-<sub>Run the following commands if you get a `Could not write domain` error (a bug that happens on new macOS installations or on newly created user accounts, when the `defaults` command hasn't yet become aware of the `com.apple.Safari` plist:</sub>
+<sub>If you get a `Could not write domain` error, use the following trick that doesn't involve giving Terminal full disk access or restarting the machine (this [is a bug](https://github.com/mathiasbynens/dotfiles/issues/1027) that happens on new macOS installations or on newly created user accounts):</sub>
 
-<sub>`open $HOME/Library/Containers/com.apple.Safari/Data/Library/Preferences/`&emsp;&emsp;_opens that folder in Finder_</sub>
+<sub>`open $HOME/Library/Containers/com.apple.Safari/Data/Library/Preferences/`
 
-<sub>`defaults read`&emsp;&emsp;_drag and drop 'com.apple.Safari.plist' from Finder after 'read' - for some reason won't work if you just write the path manually_</sub>
+<sub>In the Finder window that opens, copy the file 'com.apple.Safari.plist' with Cmd+C, and then in Terminal:
 
-<sub>Then retry the commands from the previous step</sub>
+<sub>`ls` (or `touch`, `file` etc doesn't matter) followed by a space, then paste the copied file with Cmd+V and then press Enter
+
+<sub>Run the commands from the previous step again</sub>
 
 <br>
 

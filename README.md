@@ -28,7 +28,7 @@ defaults write -app safari WBSNewTabPositionAppliesToSpawnedTabsPreferenceKey -i
 
 <br>
 
-_To revert to default tab opening behavior:_
+To revert to default tab opening behavior:
 
 <sub>
 

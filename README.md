@@ -16,15 +16,7 @@ defaults write -app safari WBSNewTabPositionPreferenceKey -int 0
 defaults write -app safari WBSNewTabPositionAppliesToSpawnedTabsPreferenceKey -int 1
 ~~~
 
-<sub>If you get a `Could not write domain` error, you can use the following trick which doesn't involve restarting the machine or giving Terminal full disk access (the reason for the error [is a bug](https://github.com/mathiasbynens/dotfiles/issues/1027) that happens on new macOS installations or on newly created user accounts):</sub>
-
-<sub>`open $HOME/Library/Containers/com.apple.Safari/Data/Library/Preferences/`
-
-<sub>In the Finder window that opens, copy the file 'com.apple.Safari.plist' with Cmd+C, and then in Terminal:
-
-<sub>`ls` (or `touch`, `file` etc doesn't matter) followed by a space, then paste the copied file with Cmd+V and then press Enter
-
-<sub>Run the commands from the previous step again</sub>
+<sub>If you get a `Could not write domain` error, you can use the following trick to bypass it:</sub><br><sub>In Terminal first run the command:</sub><br><sub>`ls $HOME/Library/Containers/com.apple.Safari/Data/Library/Preferences/com.apple.Safari.plist`</sub><br><sub>As you can see, it doesn't work, but for unknown reasons the following works:</sub><br><sub>`open $HOME/Library/Containers/com.apple.Safari/Data/Library/Preferences/`</sub><br><sub>...and then in the Finder window that opens, left click the file 'com.apple.Safari.plist' and copy it with Cmd+C, and then in Terminal again:</sub><br><sub>`ls` (or `touch`, `file` etc doesn't matter) followed by space, then paste the copied file with Cmd+V and then press Enter</sub><br><sub>Run the commands from the previous step again</sub>
 
 <br>
 

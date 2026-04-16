@@ -4,7 +4,7 @@ Position new tabs to the immediate right of the current tab in Safari on macOS T
 
 <br>
 
-***For tabs opened with URLs***
+***For tabs opened with URLs***<br><sub>_(except URLs opened from the Edit Bookmarks page or external apps)_</sub>
 ###
 Open Terminal and run the following commands – then restart Safari
 ~~~flf
@@ -15,8 +15,6 @@ defaults write -app safari WBSNewTabPositionAppliesToSpawnedTabsPreferenceKey -i
 ~~~
 
 <sup>(If the commands gives you  a `Could not write domain` error, [see here](https://github.com/paralevel/bypass-sandbox-in-macos-terminal))</sup>
-
-_Note: these settings are ignored when URLs are opened from the Edit Bookmarks page or external apps_
 
 <br>
 

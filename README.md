@@ -73,7 +73,7 @@ tell application "Safari"
 	end tell
 end tell
 ~~~
-17. Press Cmd-W or manually close the Keyboard Cowboy window, which also removes the icon from the Dock – don't press Cmd-Q or the Menu Bar process quits too
+17. Press Cmd-W or manually close the Keyboard Cowboy window, which also removes the icon from the Dock – don't press Cmd-Q or the menu bar process quits too
 18. Open Safari and check if the keyboard shortcut works
 19. The first time the keyboard shortcut triggers the assigned script, click “Allow” in the dialog that opens asking you to allow “Keyboard Cowboy.app” to control “Safari.app”
 20. Make Keyboard Cowboy start automatically when you log in – click the menu bar icon and select “Open at Login”

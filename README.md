@@ -4,7 +4,7 @@ Position new tabs to the immediate right of the current tab in Safari on macOS T
 
 <br>
 
-***For tabs opened with URLs***<br><sub>_(except when opened from the Edit Bookmarks page or external apps)_</sub>
+***For tabs opened with URLs*** <sub>_except when opened from the Edit Bookmarks page or external apps_</sub>
 
 <br>
 
@@ -16,7 +16,15 @@ defaults write -app safari WBSNewTabPositionPreferenceKey -int 0
 defaults write -app safari WBSNewTabPositionAppliesToSpawnedTabsPreferenceKey -int 1
 ~~~
 
-<sub>If you get a `Could not write domain` error, this is because the command is trying to make changes to a sandboxed file, and is usually solved by giving Full Disk Access permission to Terminal ([see here](https://github.com/mathiasbynens/dotfiles/issues/1027)), but if you want to avoid doing that just for a single file, you can instead use the following trick:</sub><br><sub>1. Open ~/Library/Containers/com.apple.Safari/Data/Library/Preferences/ in Finder (e.g. using `open ~/Library/Containers/com.apple.Safari/Data/Library/Preferences/`)</sub><br><sub>2. Copy the file 'com.apple.Safari.plist' and paste it into Terminal (press Ctrl-C to abort afterwards), also has the same effect if you copy the parent folder instead of the plist file</sub><br><sub>3. Retry the `defaults` commands</sub><br><sub>(This trick also works for other files/folders that requires Full Disk Access permission by Terminal and the effect is permanent for the current user account)</sub>
+
+
+If you get a `Could not write domain` error, this is because the command is trying to make changes to a sandboxed file, and is usually solved by giving Full Disk Access permission to Terminal ([see here](https://github.com/mathiasbynens/dotfiles/issues/1027)), but if you want to avoid doing that just for a single file, you can instead use the following trick:
+
+1. Open ~/Library/Containers/com.apple.Safari/Data/Library/Preferences/ in Finder (e.g. using `open ~/Library/Containers/com.apple.Safari/Data/Library/Preferences/`)
+2. Copy the file 'com.apple.Safari.plist' and paste it into Terminal (press Ctrl-C to abort afterwards), also has the same effect if you copy the parent folder instead of the plist file
+3. Retry the `defaults` commands
+
+(This trick also works for other files/folders that requires Full Disk Access permission by Terminal and the effect is permanent for the current user account)
 
 <br>
 
@@ -57,7 +65,7 @@ defaults delete -app safari WBSNewTabPositionAppliesToSpawnedTabsPreferenceKey
 - <i>In the rightmost panel</i>
 12. Set the workflow name to e.g. “New tab”
 13. Under “Add Trigger”, click “Keyboard Shortcut”
-14. When the red “Recording…” widget appears, press Command + T (recommended)
+14. When the red “Recording…” widget appears, press Cmd-T (recommended)
 15. Click “New Command” and then in the popup menu, select “Scripting” and then “New Shellscript” (have to use shell script because the current version of Keyboard Cowboy doesn't request the necessary Automation permission when using AppleScript, causing scripts to fail)
 16. Click the “Script goes here” field and paste the following
 ~~~applescript
@@ -76,7 +84,7 @@ tell application "Safari"
 	end tell
 end tell
 ~~~
-17. Press Command + W or manually close the Keyboard Cowboy window, which also removes the icon from the Dock – don't press Command + Q or the Menu Bar process quits too
+17. Press Cmd-W or manually close the Keyboard Cowboy window, which also removes the icon from the Dock – don't press Cmd-Q or the Menu Bar process quits too
 18. Open Safari and check if the keyboard shortcut works
 19. The first time the keyboard shortcut triggers the assigned script, click “Allow” in the dialog that opens asking you to allow “Keyboard Cowboy.app” to control “Safari.app”
 20. Make Keyboard Cowboy start automatically when you log in – click the menu bar icon and select “Open at Login”

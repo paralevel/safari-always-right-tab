@@ -14,9 +14,9 @@ defaults write -app safari WBSNewTabPositionPreferenceKey -int 0
 defaults write -app safari WBSNewTabPositionAppliesToSpawnedTabsPreferenceKey -int 1
 ~~~
 
-<sub>_If the commands gives you  a `Could not write domain` error, [see here](https://github.com/paralevel/bypass-sandbox-in-macos-terminal)_</sub>
+<sup>(If the commands gives you  a `Could not write domain` error, [see here](https://github.com/paralevel/bypass-sandbox-in-macos-terminal))</sup>
 
-<sub>_Note: these settings are ignored when URLs are opened from the Edit Bookmarks page or external apps_</sub>
+_Note: these settings are ignored when URLs are opened from the Edit Bookmarks page or external apps_
 
 <br>
 

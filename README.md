@@ -1,4 +1,4 @@
-# Open new Safari tabs next to the current
+# Open tabs to the right of current in Safari
 
 Position new tabs to the immediate right of the current tab in Safari on macOS Tahoe 26
 
@@ -14,7 +14,7 @@ defaults write -app safari WBSNewTabPositionPreferenceKey -int 0
 defaults write -app safari WBSNewTabPositionAppliesToSpawnedTabsPreferenceKey -int 1
 ~~~
 
-<sup>(If the commands gives you  a `Could not write domain` error, [see here](https://github.com/paralevel/unfull-disk-access-for-terminal)</sup>
+<sup>(If the commands gives you  a `Could not write domain` error, [see here](https://github.com/paralevel/unfull-disk-access-for-terminal))</sup>
 
 To revert to default tab opening behavior:
 

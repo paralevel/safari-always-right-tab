@@ -41,13 +41,19 @@ defaults delete -app safari WBSNewTabPositionAppliesToSpawnedTabsPreferenceKey
 5. In the ”Accessibility Access” dialog that appears, click “Open System Settings”
 6. In the System Settings window that opens, enable Keyboard Cowboy.app
 7. Click the Keyboard Cowboy icon in the Menu Bar and select “Open Keyboard Cowboy”
-- <i>In the leftmost panel</i>
+
+_<ol>In the leftmost panel</ol>_
+
 8. Click the very hard to see “Add Group” button
 9. In the window that opens, set the name to “Safari”, then under “Allowed Applications”, click “Applications”, select Safari and click “Save”
 10. Make sure the newly created “Safari” group is selected
-- <i>In the middle panel</i>
+  
+_<ol>In the middle panel</ol>_
+
 11. Click the “Add Workflow” button
-- <i>In the rightmost panel</i>
+
+_<ol>In the rightmost panel</ol>_
+
 12. Set the workflow name to e.g. “New tab”
 13. Under “Add Trigger”, click “Keyboard Shortcut”
 14. When the red “Recording…” widget appears, press Cmd-T (recommended)

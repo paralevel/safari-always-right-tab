@@ -55,18 +55,11 @@ defaults delete -app safari WBSNewTabPositionAppliesToSpawnedTabsPreferenceKey
 16. Click the “Script goes here” field and paste the following
 ~~~applescript
 #!/usr/bin/osascript
-tell application "Safari"
-	tell front window
-		set _new to make new tab at after (get current tab)
-		# make sure the 'New tabs/windows open with' settings are applied by using x-safari-https:// as url
-		set _url to "x-safari-https://"
-		set URL of _new to _url
-		# wait until the tab gets a real url, or else the location bar won't be focused when switching to the new tab
-		repeat until URL of _new is not _url
-			delay 0.2
-		end repeat
-		set current tab to _new
-	end tell
+tell front window of application "Safari"
+	set _new to make new tab at after (get current tab)
+	set current tab to _new
+	# make sure the 'New tabs/windows open with' settings are applied by using x-safari-https:// as url
+	set URL of _new to "x-safari-https://"
 end tell
 ~~~
 17. Press Cmd-W or manually close the Keyboard Cowboy window, which also removes the icon from the Dock – don't press Cmd-Q or the menu bar process quits too

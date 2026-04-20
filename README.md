@@ -1,6 +1,8 @@
 # Open tabs to the right of current tab in Safari
 
-Position new tabs to the immediate right of the current tab in Safari on macOS Tahoe 26
+Position new tabs to the immediate right of the current tab in Safari on macOS
+
+_<sub>Compatibility: macOS Tahoe 26</sub>_
 
 <br>
 

@@ -1,12 +1,10 @@
 # Open tabs to the right of current tab in Safari
 
-Position new tabs to the immediate right of the current tab in Safari on macOS
-
-<sup>Compatibility: macOS Tahoe 26</sup>
+Position new tabs to the immediate right of the current tab in Safari on macOS (Tahoe 26)
 
 <br>
 
-***For tabs opened with URLs***<br><sub>_(except when opened from the Edit Bookmarks page or external apps)_</sub>
+***For tabs opened with URLs***
 ###
 Open Terminal and run the following commands – then restart Safari
 ~~~flf
@@ -36,6 +34,9 @@ defaults delete -app safari WBSNewTabPositionAppliesToSpawnedTabsPreferenceKey
 
 ***For blank tabs***
 ###
+
+The previous settings don’t apply to new _blank_ tabs unfortunately, so a workaround is needed: <sub>(although there's a `WBSNewBlankTabPositionAppliesToAllBlankTabsPreferenceKey` key, setting it to `true` doesn't do the trick, even when also setting another related key, `WBSTabOrderManagerSuppressRelatingNewBlankTabsPreferenceKey`, to `true`)</sub>
+
 1. Download Keyboard Cowboy: https://zenangst.github.io/app/keyboardcowboy/index.html
 2. Install and launch it<br>
 3. On first launch, when the “Choose your configuration” window appears, click “Empty” followed by “Confirm”

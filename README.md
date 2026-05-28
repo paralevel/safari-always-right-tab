@@ -19,14 +19,16 @@ defaults write -app safari WBSNewTabPositionAppliesToSpawnedTabsPreferenceKey -i
 2. Restart Safari
 <br>
 
-<sub>
+<sub>To revert:</sub>
 
-> To revert:
+<sup>
+	
 ~~~
 defaults delete -app safari WBSNewTabPositionPreferenceKey; defaults delete -app safari WBSNewTabPositionAppliesToSpawnedTabsPreferenceKey
 ~~~
 
-</sub>
+</sup>
+
 <br>
 
 ***For blank tabs***
@@ -34,7 +36,7 @@ defaults delete -app safari WBSNewTabPositionPreferenceKey; defaults delete -app
  
 Since the previous settings don’t apply to new _blank_ tabs, use the following workaround (actually there’s also a “WBSNewBlankTabPositionAppliesToAllBlankTabsPreferenceKey” setting, but enabling it doesn’t seem to do anything, even when enabling the related “WBSTabOrderManagerSuppressRelatingNewBlankTabsPreferenceKey” setting):
 
-1. Download Keyboard Cowboy: https://zenangst.github.io/app/keyboardcowboy/index.html
+1. Download the free and open source [Keyboard Cowboy](https://zenangst.github.io/app/keyboardcowboy/index.html)
 2. Install and launch it<br>
 3. On first launch, when the “Choose your configuration” window appears, click “Empty” followed by “Confirm”
 4. Click the ”Request Permission” button in the next window

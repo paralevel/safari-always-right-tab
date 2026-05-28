@@ -1,7 +1,7 @@
 # Always Right New Tab in Safari
 Position new tabs to the immediate right of the current tab in Safari on macOS
 
-<sub>_System Requirements: macOS Tahoe 26_</sub>
+<sub>System Requirements: macOS Tahoe 26</sub>
 
 <br>
 

@@ -2,7 +2,7 @@
 <sup>_System Requirements: macOS Tahoe 26_</sup>
 <br>
 <br>
-Position new tabs to the immediate right of the current tab in Safari on macOS
+Position new tabs to the immediate right of the current tab in Safari on macOS.
 <br>
 <br>
 ***For tabs opened with URLs***
@@ -22,7 +22,7 @@ Run the following Terminal command and restart Safari afterwards:
 Since the previous settings don’t apply to new _blank_ tabs, use the following workaround (actually there’s also a <samp>WBSNewBlankTabPositionAppliesToAllBlankTabsPreferenceKey</samp> setting, but enabling it doesn’t seem to do anything, even when enabling the related <samp>WBSTabOrderManagerSuppressRelatingNewBlankTabsPreferenceKey</samp> setting):
 
 1. Download the free and open source [Keyboard Cowboy](https://zenangst.github.io/app/keyboardcowboy/index.html)
-2. Install and launch it<br>
+2. Install and launch it
 3. On first launch, when the “Choose your configuration” window appears, click “Empty” followed by “Confirm”
 4. Click the ”Request Permission” button in the next window
 5. In the ”Accessibility Access” dialog that appears, click “Open System Settings”
@@ -59,6 +59,4 @@ end tell
 19. The first time the keyboard shortcut triggers the assigned script, click “Allow” in the dialog that opens asking you to allow “Keyboard Cowboy.app” to control “Safari.app”
 20. Make Keyboard Cowboy start automatically when you log in – click the menu bar icon and select “Open at Login”
 
-<br>
-
-_In cases where you actually want to create a new tab at the end of the tab bar, you can press <kbd>command</kbd> <kbd>option</kbd> <kbd>T</kbd> or the “+” (New Tab) button in the toolbar_
+(In case you actually *want* to create a new tab at the end of the tab bar, you can always press <kbd>command</kbd> <kbd>option</kbd> <kbd>T</kbd> or the “+” button in the toolbar)
